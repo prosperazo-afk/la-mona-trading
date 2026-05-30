@@ -116,7 +116,7 @@ export function ProviderForm({ provider }: ProviderFormProps) {
           <input
             required
             type="text"
-            value={form.name}
+            value={form.name ?? ''}
             onChange={e => set('name', e.target.value)}
             placeholder="Ej: Guangzhou Fashion Textile Co., Ltd."
             className={inputCls}
@@ -127,7 +127,7 @@ export function ProviderForm({ provider }: ProviderFormProps) {
         <Field label="Categoría *">
           <select
             required
-            value={form.category}
+            value={form.category ?? ''}
             onChange={e => set('category', e.target.value)}
             className={inputCls}
           >
