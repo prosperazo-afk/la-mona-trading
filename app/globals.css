@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400&family=Carlito:ital,wght@0,400;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-terracota: #C74A27;
+  --color-mostaza: #F8C440;
+  --color-beige: #F5D9B0;
+  --color-naranja: #F4A259;
+  --color-marron: #5C3B28;
+}
+
+body {
+  font-family: 'Carlito', Arial, sans-serif;
+  background-color: #F5D9B0;
+  color: #5C3B28;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Caladea', Georgia, serif;
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+}
