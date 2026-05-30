@@ -152,7 +152,7 @@ export function ProviderForm({ provider }: ProviderFormProps) {
         <Field label="Productos que fabrica">
           <textarea
             rows={3}
-            value={form.products}
+            value={form.products ?? ''}
             onChange={e => set('products', e.target.value)}
             placeholder="Ej: Ropa deportiva, leggings, tops, conjuntos..."
             className={inputCls}
@@ -163,7 +163,7 @@ export function ProviderForm({ provider }: ProviderFormProps) {
         <Field label="Contacto (WeChat / WhatsApp / teléfono)">
           <input
             type="text"
-            value={form.contact}
+            value={form.contact ?? ''}
             onChange={e => set('contact', e.target.value)}
             placeholder="Ej: WeChat: supplier2024 / +86 138 0000 0000"
             className={inputCls}
@@ -175,7 +175,7 @@ export function ProviderForm({ provider }: ProviderFormProps) {
           <Field label="MOQ (pedido mínimo)">
             <input
               type="text"
-              value={form.moq}
+              value={form.moq ?? ''}
               onChange={e => set('moq', e.target.value)}
               placeholder="Ej: 100 unidades por color"
               className={inputCls}
@@ -184,7 +184,7 @@ export function ProviderForm({ provider }: ProviderFormProps) {
           <Field label="Tiempo de producción">
             <input
               type="text"
-              value={form.production_time}
+              value={form.production_time ?? ''}
               onChange={e => set('production_time', e.target.value)}
               placeholder="Ej: 15-20 días hábiles"
               className={inputCls}
@@ -212,7 +212,7 @@ export function ProviderForm({ provider }: ProviderFormProps) {
         <Field label="Link Alibaba o web">
           <input
             type="url"
-            value={form.website_url}
+            value={form.website_url ?? ''}
             onChange={e => set('website_url', e.target.value)}
             placeholder="https://..."
             className={inputCls}
@@ -223,7 +223,7 @@ export function ProviderForm({ provider }: ProviderFormProps) {
         <Field label="Notas internas">
           <textarea
             rows={4}
-            value={form.notes}
+            value={form.notes ?? ''}
             onChange={e => set('notes', e.target.value)}
             placeholder="Observaciones privadas sobre este proveedor..."
             className={inputCls}
