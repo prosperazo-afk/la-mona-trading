@@ -141,7 +141,7 @@ export function ProviderForm({ provider }: ProviderFormProps) {
         <Field label="Ciudad / Provincia en China">
           <input
             type="text"
-            value={form.city_province}
+            value={form.city_province ?? ''}
             onChange={e => set('city_province', e.target.value)}
             placeholder="Ej: Guangzhou, Guangdong"
             className={inputCls}
