@@ -71,7 +71,7 @@ export function ProviderForm({ provider }: ProviderFormProps) {
     const payload = {
       ...form,
       rating: form.rating || null,
-      city_province: form.city_province || null,
+      city_province: form.city_province || undefined,
       products: form.products || null,
       contact: form.contact || null,
       moq: form.moq || null,
